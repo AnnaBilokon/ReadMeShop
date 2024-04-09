@@ -1,0 +1,43 @@
+.item {
+	width: 300px;
+}
+.item img{
+	width: 200px;
+	height: 300px;
+}
+
+.item p{ 
+	width: 200px;
+	margin: 6px 10px 6px 0;
+}
+
+.item_prices{
+	display: flex;
+	gap: 20px;
+}
+
+.item_price_new{
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.item_price_old{
+	color: rgb(213, 16, 16);
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: line-through;
+}
+
+.item:hover{
+	transform: scale(1.05);
+	transition: 0.6s;
+}
+
+.item_button_box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 10px 40px;
+}
+

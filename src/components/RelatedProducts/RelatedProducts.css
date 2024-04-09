@@ -1,0 +1,28 @@
+.relatedproducts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	height: 90hv;
+}
+
+.relatedproducts h1 {
+	color: black;
+	font-size: 50px;
+	font-weight: 600;
+
+}
+
+.relatedproducts hr {
+	width: 200px;
+	height: 1px;
+	border-radius: 10px;
+	background: #545454;
+}
+
+.relatedproducts_item{
+	margin-top: 50px;
+	display: flex;
+	gap: 30px;
+	margin-bottom: 100px;
+}

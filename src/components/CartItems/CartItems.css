@@ -1,0 +1,115 @@
+.cart_items{
+	margin: 100px 170px;
+}
+
+.cart_items hr {
+	height: 3px;
+	background:white;
+	border: 0;
+}
+
+.cart_items_format_main {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+	gap: 75px;
+	padding: 20px 0px;
+	color: #545454;
+	font-size: 18px;
+	font-weight: 600;
+}
+.cart_items-format {
+	font-size: 17px;
+	font-weight: 500;
+
+}
+
+.cart_icon_product {
+	height: 62px;
+}
+.cart_items_remove_icon {
+	width: 15px;
+	margin: 0 40px;
+	cursor: pointer;
+}
+
+.cart_items_quantity {
+	width: 64px;
+	height: 50px;
+	border: 2px solid #ebebeb;
+	background: white;
+}
+
+.cart_items_down {
+	display: flex;
+	margin: 100px 0;
+}
+.cart_items_total {
+	display: flex;
+	flex-direction: column;
+	margin-right: 200px;
+	gap: 40px;
+}
+
+.cart_items_total_item {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0px;
+}
+
+.cart_items_total button {
+	width: 262px;
+	height: 58px;
+	outline: none;
+	border: none;
+	background: #FFDE59;
+	color: #545454;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 75px;
+	cursor: pointer;
+}
+
+.cart_items_promocode {
+	flex: 1;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.cart_items_promocode p {
+	color: #545454;
+}
+
+.cart_items_promobox {
+	display: flex;
+	width: 504px;
+	margin-top: 15px;
+	height: 58px;
+	
+	
+}
+
+.cart_items_promobox input {
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 16px;
+	width: 330px;
+	height: 50px;
+	background: #ebebeb;
+	padding: 0 10px;
+	margin-right: 20px;
+}
+
+.cart_items_promobox button {
+	width: 170px;
+	height: 48px;
+	font-size: 16px;
+	border-radius: 75px;
+	margin-left: 5px;
+	background: #545454;
+	border: 1px solid #545454;
+	color: white;
+	cursor: pointer;
+	
+}
