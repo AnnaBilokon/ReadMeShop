@@ -41,3 +41,17 @@
 	margin: 10px 40px;
 }
 
+.addToCardBtn {
+	padding: 20px 40px;
+	width: 160px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #545454;
+	background: #FFDE59;
+	margin: 20px;
+	border-radius: 75px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
