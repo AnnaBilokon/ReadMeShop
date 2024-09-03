@@ -11,11 +11,12 @@
 }
 
 .nav_menu {
+	font-family: "Ubuntu Mono", monospace;
 	display: flex;
 	align-items: center;
 	list-style: none;
 	gap: 50px;
-	color: white;
+	color: black;
 	font-size: 20px;
 	font-weight: 500;
 }
@@ -40,19 +41,17 @@ cursor: pointer;
 .nav_login_cart {
 	display: flex;
 	align-items: center;
-	gap: 45px;
+	gap: 30px;
 }
 
 .nav_login_cart button {
-	width: 157px;
-	height: 58px;
+	font-family: "Ubuntu Mono", monospace;
+	width: 130px;
+	height: 40px;
 	outline: none;
-	border: 1px solid  #FFDE59 ;
-	border-radius: 75px;
-	color: #545454;
-	font-size: 22px;
-	font-weight: 500;
-	background: #FFDE59;
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
 	cursor: pointer;
 }
 
@@ -71,6 +70,6 @@ margin-top: -35px;
 margin-left: -55px;
 border-radius: 11px;
 font-size: 14px;
-background:#FFDE59;
-color:#545454;
+background:#697AD1;
+color:white;
 }
