@@ -1,19 +1,56 @@
 .item {
 	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: relative;
+}
+
+.box-shadow {
+	width: 250px;
+	height: 400px;
+	background-color: #F0F0F0;
+	position: absolute;
+	top:80px;
+	left:25px;
+	z-index: -1;
+	border-radius: 10px;
+}
+
+.container-item{
+	margin-left: 50px;
 }
 .item img{
 	width: 200px;
 	height: 300px;
+	border-radius: 10px;
+	margin: 0 50px;
+}
+.author-name {
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 16px;
+	font-weight: 400;
+	color: #636363;
+	
+}
+.rating {
+	display: flex;
+	margin: 15px 0;
 }
 
-.item p{ 
+.book-title{ 
 	width: 200px;
+	height: 30px;
 	margin: 6px 10px 6px 0;
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 .item_prices{
 	display: flex;
-	gap: 20px;
+	gap: 70px;
 }
 
 .item_price_new{
@@ -42,15 +79,14 @@
 }
 
 .addToCardBtn {
-	padding: 20px 40px;
-	width: 160px;
-	height: 50px;
-	font-size: 14px;
-	font-weight: 600;
-	color: #545454;
-	background: #FFDE59;
-	margin: 20px;
-	border-radius: 75px;
+	width: 100px;
+	height: 35px;
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	background: #697AD1;
+	border-radius: 10px;
 	border: none;
 	outline: none;
 	cursor: pointer;

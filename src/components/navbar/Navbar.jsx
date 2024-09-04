@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './Navbar.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../assets/Logo.svg'
 import cartIcon from '../assets/cart_icon.png'
 import { Link } from 'react-router-dom'
@@ -43,7 +44,7 @@ const Navbar = () => {
             to="/romance"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
-            Romance
+            Shop
           </Link>
           {menu === 'romance' ? <hr /> : <></>}
         </li>
@@ -56,7 +57,7 @@ const Navbar = () => {
             to="/fantasy"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
-            Fantasy
+            Categories
           </Link>{' '}
           {menu === 'fantasy' ? <hr /> : <></>}
         </li>
@@ -69,14 +70,17 @@ const Navbar = () => {
             to="/litFiction"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
-            Literary Fiction
+            Events
           </Link>{' '}
           {menu === 'litFiction' ? <hr /> : <></>}
         </li>
       </ul>
+      <i class="fas fa-coffee"></i>
       <div className="nav_login_cart">
         <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <button>Login</button>
+          <button>
+            <FontAwesomeIcon icon={faUser} /> Account{' '}
+          </button>
         </Link>
         <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
           {' '}
