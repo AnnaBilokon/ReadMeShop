@@ -11,6 +11,7 @@
 .product_display_main_img {
 	width: 436px;
 	height: 600px;
+	border-radius: 10px;
 }
 
 .product_display_right {
@@ -66,7 +67,7 @@ flex-direction: column;
 	gap: 20px;
 }
 
-.product_display_right_sizes div {
+.product_display_right_sizes .select-cover {
 	padding: 18px 24px;
 	background: #fbfbfb;
 	border: 1px solid #ebebeb;
@@ -74,6 +75,13 @@ flex-direction: column;
 	cursor: pointer;
 }
 
+.product_display_right_sizes .active {
+	padding: 18px 24px;
+	background: #8b96cd;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	cursor: pointer;
+}
 .product_display_right button {
 	padding: 20px 40px;
 	width: 200px;
@@ -86,7 +94,4 @@ flex-direction: column;
 	border: none;
 	outline: none;
 	cursor: pointer;
-}
-.product_display_right_discription {
-
 }
