@@ -25,7 +25,7 @@ const Item = (props) => {
           <FontAwesomeIcon icon={faStar} style={{ color: '#FFD43B' }} />
         </div>
         <div className="item_prices">
-          <div className="item_price_new">${props.new_price}</div>
+          <div className="item_price_new">{props.new_price} kr</div>
           <button
             className="addToCardBtn"
             onClick={() => {
