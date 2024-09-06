@@ -45,3 +45,20 @@
 	font-weight: 500;
 	cursor: pointer;
 }
+
+.tab-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0px 120px;
+}
+
+.selected_category {
+	margin: 60px auto;
+	color: black;
+	font-size: 40px;
+	font-weight: 400;
+	font-family: "Special Elite", system-ui;
+	text-align: center;
+}

@@ -1,12 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import '../pages/css/ShopCategory.css'
 import { ShopContext } from '../context/ShopContext'
 import dropdown_icon from '../components/assets/dropdown_icon.png'
-// import all_product from '../components/assets/all_product'
 import Item from '../components/Item/Item'
 
 function ShopCategory(props) {
   const { all_product } = useContext(ShopContext)
+  const [visibleItems, setVisibleItems] = useState(8)
+
+  const showMoreItems = (event) => {
+    const scrollPosition = window.scrollY
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4) // Show 3 more items each time
+    setTimeout(() => {
+      window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
+    }, 0)
+  }
+
   return (
     <div className="shop_category">
       <img className="shopcategory_banner" src={props.banner} alt="" />
@@ -19,25 +28,29 @@ function ShopCategory(props) {
         </div>
       </div>
       <div className="shopcategory_products">
-        {all_product.map((item, i) => {
-          if (props.category === item.category) {
-            return (
-              <Item
-                key={i}
-                id={item.id}
-                name={item.name}
-                description={item.description}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            )
-          } else {
-            return null
-          }
+        {all_product.slice(0, visibleItems).map((item, i) => {
+          return (
+            <Item
+              key={i}
+              id={item.id}
+              name={item.name}
+              description={item.description}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+            />
+          )
         })}
       </div>
-      <div className="shopcategory_loadmore">Explore more</div>
+      {visibleItems < all_product.length && (
+        <button
+          type="button"
+          className="shopcategory_loadmore"
+          onClick={showMoreItems}
+        >
+          Show More
+        </button>
+      )}
     </div>
   )
 }
