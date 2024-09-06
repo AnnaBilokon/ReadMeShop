@@ -37,42 +37,39 @@ const Navbar = () => {
         </li>
         <li
           onClick={() => {
-            setMenu('romance')
+            setMenu('shop')
           }}
         >
-          <Link
-            to="/romance"
-            style={{ textDecoration: 'none', color: 'inherit' }}
-          >
+          <Link to="/shop" style={{ textDecoration: 'none', color: 'inherit' }}>
             Shop
           </Link>
-          {menu === 'romance' ? <hr /> : <></>}
+          {menu === 'shop' ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu('fantasy')
+            setMenu('categories')
           }}
         >
           <Link
-            to="/fantasy"
+            to="/categories"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             Categories
           </Link>{' '}
-          {menu === 'fantasy' ? <hr /> : <></>}
+          {menu === 'categories' ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu('litFiction')
+            setMenu('events')
           }}
         >
           <Link
-            to="/litFiction"
+            to="/events"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             Events
           </Link>{' '}
-          {menu === 'litFiction' ? <hr /> : <></>}
+          {menu === 'events' ? <hr /> : <></>}
         </li>
       </ul>
       <i class="fas fa-coffee"></i>
