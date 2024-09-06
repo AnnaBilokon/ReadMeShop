@@ -5,16 +5,16 @@
 	padding-top: 100px;
 	margin-bottom: 100px;
 }
-.login_signUp_conteiner {
+.login_signUp_container {
 	width: 580px;
 	height: 600px;
-	background: linear-gradient(180deg,  #545454 0%, white 60%);;
-	border: 1px solid #545454;
+	background: linear-gradient(180deg,  #697AD1 0%, white 60%);;
+	border: 1px solid #697AD1;
 	border-radius: 10px;
 	margin: auto;
-	padding: 40px 60px;
+	padding: 40px 80px;
 }
-.login_signUp_conteiner h1 {
+.login_signUp_container h1 {
 margin: 20px 0px;
 color: white;
 }
@@ -29,7 +29,7 @@ color: white;
 .login_signUp_fields input {
 height: 68px;
 width: 100%;
-padding-left: 20px;
+margin: 0 auto;
 border: 1px solid #545454;
 border-radius: 10px;
 outline: none;
@@ -38,17 +38,17 @@ font-size: 18px;
 
 }
 
-.login_signUp_conteiner button {
+.login_signUp_container button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 420px;
 	height: 72px;
-	background: #FFDE59;
-	color: #545454;
+	background: #697AD1;
+	color: white;
 	margin: 30px auto;
 	border: none;
-	border-radius: 75px;
+	border-radius: 10px;
 	font-size: 24px;
 	font-weight: 500;
 	cursor: pointer;
@@ -76,4 +76,8 @@ font-size: 18px;
 	color:#545454;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+.login_signUp_fields input {
+padding-left: 10px;
 }
