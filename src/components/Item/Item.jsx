@@ -29,7 +29,7 @@ const Item = (props) => {
           <button
             className="addToCardBtn"
             onClick={() => {
-              addToCart(product.id)
+              addToCart(props.id)
             }}
           >
             Buy
