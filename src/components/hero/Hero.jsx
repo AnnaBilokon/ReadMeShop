@@ -13,10 +13,10 @@ function Hero() {
             <p>Explore to find your new favorite book</p>
           </div>
         </div>
-        <div className="hero_latest_btn">
+        <button className="hero_latest_btn">
           Explore
           <img src={arrow_icon} alt="" />
-        </div>
+        </button>
       </div>
       <div className="hero_right">
         <img src={hero_image} alt="hero_picture" />
