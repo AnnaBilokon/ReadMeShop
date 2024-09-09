@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { ShopContext } from '../../context/ShopContext'
 
 const Item = (props) => {
-  const { product } = props
+  //   const { product } = props
   const { addToCart } = useContext(ShopContext)
   return (
     <div className="item">
