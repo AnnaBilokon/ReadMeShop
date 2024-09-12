@@ -39,7 +39,7 @@ let all_product = [
   {
     id: 1,
     name: "The Midnight Library",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
 	description:'In The Midnight Library, Matt Haigs enchanting blockbuster novel, Nora Seed finds herself faced with this decision. Faced with the possibility of changing her life for a new one, following a different career, undoing old breakups, realizing her dreams of becoming a glaciologist; she must search within herself as she travels through the Midnight Library to decide what is truly fulfilling in life, and what makes it worth living in the first place.',
     image: p1_img,
     new_price: 50.0,
@@ -48,7 +48,7 @@ let all_product = [
   {
     id: 2,
     name: "Where the crawdads sing",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
 	description:'In Where the Crawdads Sing, Owens juxtaposes an exquisite ode to the natural world against a profound coming of age story and haunting mystery. Thought-provoking, wise, and deeply moving, Owens’s debut novel reminds us that we are forever shaped by the child within us, while also subject to the beautiful and violent secrets that nature keeps.',
     image: p2_img,
     new_price: 85.0,
@@ -57,7 +57,7 @@ let all_product = [
   {
     id: 3,
     name: "The silent patient",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
 	description:'Alicia Berenson’s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London’s most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.',
     image: p3_img,
     new_price: 60.0,
@@ -66,7 +66,7 @@ let all_product = [
   {
     id: 4,
     name: "A good girl's guide",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
 	description:'The case is closed. Five years ago, schoolgirl Andie Bell was murdered by Sal Singh. The police know he did it. Everyone in town knows he did it.But having grown up in the same small town that was consumed by the murder, Pippa Fitz-Amobi is not so sure. When she chooses the case as the topic for her final year project, she starts to uncover secrets that someone in town desperately wants to stay hidden. And if the real killer is still out there, how far will they go to keep Pip from the truth?',
     image: p4_img,
     new_price: 100.0,
@@ -75,7 +75,7 @@ let all_product = [
   {
     id: 5,
     name: "All the light we cannot see",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -83,7 +83,7 @@ let all_product = [
   {
     id: 6,
     name: "A curse for true love",
-    category: "fantasy",
+    category: "Fantasy",
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -91,7 +91,7 @@ let all_product = [
   {
     id: 7,
     name: "Harry Potter and Philosopher's stone",
-    category: "fantasy",
+    category: "Fantasy",
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -99,7 +99,7 @@ let all_product = [
   {
     id: 8,
     name: "Legendary",
-    category: "fantasy",
+    category: "Fantasy",
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -107,7 +107,7 @@ let all_product = [
   {
     id: 9,
     name: "Babel",
-    category: "fantasy",
+    category: "Fantasy",
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -115,7 +115,7 @@ let all_product = [
   {
     id: 10,
     name: "Piranesi",
-    category: "fantasy",
+    category: "Fantasy",
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -123,7 +123,7 @@ let all_product = [
   {
     id: 11,
     name: "A thousand splendid suns",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -131,7 +131,7 @@ let all_product = [
   {
     id: 12,
     name: "The seven husbands of Evelin Hugo",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -139,7 +139,7 @@ let all_product = [
   {
     id: 13,
     name: "Reminders of him",
-    category: "romance",
+    category: "Romance",
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -147,7 +147,7 @@ let all_product = [
   {
     id: 14,
     name: "Things we never got over",
-    category: "romance",
+    category: "Romance",
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -155,7 +155,7 @@ let all_product = [
   {
     id: 15,
     name: "A thousand boy kisses",
-    category: "romance",
+    category: "Romance",
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -163,7 +163,7 @@ let all_product = [
   {
     id: 16,
     name: "Archer's voice",
-    category: "romance",
+    category: "Romance",
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -171,7 +171,7 @@ let all_product = [
   {
     id: 17,
     name: "Love and other words",
-    category: "romance",
+    category: "Romance",
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -179,7 +179,7 @@ let all_product = [
   {
     id: 18,
     name: "Better then the movies",
-    category: "romance",
+    category: "Romance",
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -187,7 +187,7 @@ let all_product = [
   {
     id: 19,
     name: "A little life",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -195,7 +195,7 @@ let all_product = [
   {
     id: 20,
     name: "The secret history",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -203,7 +203,7 @@ let all_product = [
   {
     id: 21,
     name: "If we were Villians",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -211,7 +211,7 @@ let all_product = [
   {
     id: 22,
     name: "Fourth wing",
-    category: "fantasy",
+    category: "Fantasy",
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -219,7 +219,7 @@ let all_product = [
   {
     id: 23,
     name: "Powerless",
-    category: "fantasy",
+    category: "Fantasy",
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -227,7 +227,7 @@ let all_product = [
   {
     id: 24,
     name: "The serpent and the wings of the night",
-    category: "fantasy",
+    category: "Fantasy",
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -235,7 +235,7 @@ let all_product = [
   {
     id: 25,
     name: "House of flame and shadow",
-    category: "fantasy",
+    category: "Fantasy",
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -243,7 +243,7 @@ let all_product = [
   {
     id: 26,
     name: "If he had been with me",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -251,7 +251,7 @@ let all_product = [
   {
     id: 27,
     name: "A fire in the flesh",
-    category: "fantasy",
+    category: "Fantasy",
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -259,7 +259,7 @@ let all_product = [
   {
     id: 28,
     name: "The last mrs Parrish",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -267,7 +267,7 @@ let all_product = [
   {
     id: 29,
     name: "Behind closed doors",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -275,7 +275,7 @@ let all_product = [
   {
     id: 30,
     name: "The housemaid",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -283,7 +283,7 @@ let all_product = [
   {
     id: 31,
     name: "The seven year slip",
-    category: "romance",
+    category: "Romance",
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -291,7 +291,7 @@ let all_product = [
   {
     id: 32,
     name: "The nightingale",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -299,7 +299,7 @@ let all_product = [
   {
     id: 33,
     name: "The beekeeper of Aleppo",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -307,7 +307,7 @@ let all_product = [
   {
     id: 34,
     name: "As long as the lemon trees grow",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -315,7 +315,7 @@ let all_product = [
   {
     id: 35,
     name: "The island of missing trees",
-    category: "literaly_fiction",
+    category: "Literaly_fiction",
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -323,7 +323,7 @@ let all_product = [
   {
     id: 36,
     name: "The fourty rules of love",
-    category: "romance",
+    category: "Romance",
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,

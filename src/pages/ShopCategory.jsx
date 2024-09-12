@@ -7,6 +7,12 @@ import Item from '../components/Item/Item'
 function ShopCategory(props) {
   const { all_product } = useContext(ShopContext)
   const [visibleItems, setVisibleItems] = useState(8)
+  const [currentPage, setCurrentPage] = useState(1)
+  const productsPerPage = 8
+
+  const startIndex = (currentPage - 1) * productsPerPage
+  const endIndex = startIndex + productsPerPage
+  const totalProducts = all_product.length
 
   const showMoreItems = (event) => {
     const scrollPosition = window.scrollY
@@ -21,7 +27,10 @@ function ShopCategory(props) {
       <img className="shopcategory_banner" src={props.banner} alt="" />
       <div className="shopcategory_indexSort">
         <p>
-          <span>Showing 1-12</span> out of 36 products
+          <span>
+            Showing {startIndex + 1} - {Math.min(endIndex, totalProducts)} of{' '}
+            {totalProducts} results
+          </span>
         </p>
         <div className="shopcategory_sort">
           Sort by <img src={dropdown_icon} alt="" />
@@ -34,6 +43,7 @@ function ShopCategory(props) {
               key={i}
               id={item.id}
               name={item.name}
+              category={item.category}
               description={item.description}
               image={item.image}
               new_price={item.new_price}

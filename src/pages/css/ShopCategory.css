@@ -37,12 +37,13 @@
 	align-items: center;
 	margin: 150px auto;
 	width: 233px;
-	height: 69px;
-	border-radius: 75px;
-	background: #545454;
-	color: white;
+	height: 45px;
+	border: 1px solid #697AD1; 
+	border-radius: 10px;
+	background: white;
+	color: #697AD1;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	cursor: pointer;
 }
 
@@ -51,7 +52,8 @@
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin: 0px 120px;
+	margin: 30px 130px;
+	padding: 0px;
 }
 
 .selected_category {
