@@ -12,3 +12,9 @@
 	font-weight: 500;
 	cursor: pointer;
 }
+
+.tab-button:hover {
+	background-color:white;
+	color: #697AD1;
+	border: 2px solid #697AD1;
+}
