@@ -1,12 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import '../pages/css/ShopCategory.css'
-import { ShopContext } from '../context/ShopContext'
 import TabButton from '../components/TabButton/TabButton'
-import ShopCategory from './ShopCategory.jsx'
 import SelectedCategory from '../components/SelectedCategory.jsx'
 
 function Categories(props) {
-  const { all_product } = useContext(ShopContext)
   const [selectedCategory, setSelectedCategory] = useState('Romance')
   function handleClick(selectedButton) {
     setSelectedCategory(selectedButton)

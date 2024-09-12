@@ -5,11 +5,12 @@ import dropdown_icon from './assets/dropdown_icon.png'
 
 export default function SelectedCategory({ category }) {
   const { all_product } = useContext(ShopContext)
-  const [visibleItems, setVisibleItems] = useState(6)
+  const [visibleItems, setVisibleItems] = useState(8)
+  const totalItems = all_product.length
 
-  const showMoreItems = (event) => {
+  const handleShowMore = (event) => {
     const scrollPosition = window.scrollY
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4) // Show 3 more items each time
+    setVisibleItems((prevVisible) => Math.min(prevVisible + 4, totalItems)) // Increase by 4, but don't exceed total
     setTimeout(() => {
       window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
     }, 0)
@@ -24,7 +25,7 @@ export default function SelectedCategory({ category }) {
       <div className="shop_category">
         <div className="shopcategory_indexSort">
           <p>
-            <span>Showing 1-12</span> out of 36 products
+            <span>Showing {Math.min(visibleItems, totalItems)} results</span>
           </p>
           <div className="shopcategory_sort">
             Sort by <img src={dropdown_icon} alt="" />
@@ -46,11 +47,11 @@ export default function SelectedCategory({ category }) {
             )
           })}
         </div>
-        {visibleItems < all_product.length && (
+        {visibleItems < totalItems && (
           <button
             type="button"
             className="shopcategory_loadmore"
-            onClick={showMoreItems}
+            onClick={handleShowMore}
           >
             Show More
           </button>
