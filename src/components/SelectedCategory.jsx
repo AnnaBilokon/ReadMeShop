@@ -10,7 +10,7 @@ export default function SelectedCategory({ category }) {
 
   const handleShowMore = (event) => {
     const scrollPosition = window.scrollY
-    setVisibleItems((prevVisible) => Math.min(prevVisible + 4, totalItems)) // Increase by 12, but don't exceed total
+    setVisibleItems((prevVisible) => Math.min(prevVisible + 4, totalItems)) // Increase by 4, but don't exceed total
     setTimeout(() => {
       window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
     }, 0)

@@ -7,20 +7,23 @@ import Item from '../components/Item/Item'
 function ShopCategory(props) {
   const { all_product } = useContext(ShopContext)
   const [visibleItems, setVisibleItems] = useState(8)
-  const [currentPage, setCurrentPage] = useState(1)
-  const productsPerPage = 8
+  const totalItems = all_product.length
 
-  const startIndex = (currentPage - 1) * productsPerPage
-  const endIndex = startIndex + productsPerPage
-  const totalProducts = all_product.length
-
-  const showMoreItems = (event) => {
+  const handleShowMore = (event) => {
     const scrollPosition = window.scrollY
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4) // Show 3 more items each time
+    setVisibleItems((prevVisible) => Math.min(prevVisible + 4, totalItems)) // Increase by 4, but don't exceed total
     setTimeout(() => {
       window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
     }, 0)
   }
+
+  //   const showMoreItems = (event) => {
+  //     const scrollPosition = window.scrollY
+  //     setVisibleItems((prevVisibleItems) => prevVisibleItems + 4) // Show 3 more items each time
+  //     setTimeout(() => {
+  //       window.scrollTo({ top: scrollPosition, behavior: 'smooth' })
+  //     }, 0)
+  //   }
 
   return (
     <div className="shop_category">
@@ -28,8 +31,7 @@ function ShopCategory(props) {
       <div className="shopcategory_indexSort">
         <p>
           <span>
-            Showing {startIndex + 1} - {Math.min(endIndex, totalProducts)} of{' '}
-            {totalProducts} results
+            Showing {Math.min(visibleItems, totalItems)} of {totalItems} results
           </span>
         </p>
         <div className="shopcategory_sort">
@@ -52,11 +54,11 @@ function ShopCategory(props) {
           )
         })}
       </div>
-      {visibleItems < all_product.length && (
+      {visibleItems < totalItems && (
         <button
           type="button"
           className="shopcategory_loadmore"
-          onClick={showMoreItems}
+          onClick={handleShowMore}
         >
           Show More
         </button>
