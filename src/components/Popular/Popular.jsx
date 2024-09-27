@@ -6,11 +6,6 @@ import Item from '../Item/Item'
 const Popular = () => {
   return (
     <div className="popular">
-      <div className="search-container">
-        <input type="text" placeholder="Search" className="search-bar" />
-        <input type="button" value="Ok" className="search-btn" />
-      </div>
-
       <h1>POPULAR TODAY</h1>
       <hr />
       <div className="popular_item">

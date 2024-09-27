@@ -1,0 +1,46 @@
+.event-container {
+	display: flex;
+	justify-content: flex-start;
+	width: 70%;
+	height: fit-content;
+	margin: 40px auto;
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+
+.event-image {
+	width: 160px;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	margin-right: 20px;
+	border-radius: 20px 0 0 20px;
+}
+
+.event-button {
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 20px;
+	background:#697AD1;
+    color:white;
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.event {
+	display: flex;
+	flex-direction: column;
+align-items: center;	
+}
+
+.event h1 {
+	margin-top: 60px;
+	color: black;
+	font-size: 40px;
+	font-weight: 400;
+	font-family: "Special Elite", system-ui;
+}

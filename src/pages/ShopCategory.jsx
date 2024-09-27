@@ -28,6 +28,12 @@ function ShopCategory(props) {
   return (
     <div className="shop_category">
       <img className="shopcategory_banner" src={props.banner} alt="" />
+
+      <div className="search-container">
+        <input type="text" placeholder="Search" className="search-bar" />
+        <input type="button" value="Ok" className="search-btn" />
+      </div>
+
       <div className="shopcategory_indexSort">
         <p>
           <span>

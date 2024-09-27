@@ -11,6 +11,7 @@ import banner from './components/assets/banner.png';
 import banner_1 from './components/assets/banner_1.png';
 import Footer from './components/Footer/Footer';
 import Categories from './pages/Categories';
+import Event from './components/Event/Event';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
 		<Route path='/' element={<Home/>}/>
 		<Route path='/shop' element={<ShopCategory banner={banner} />}/>
 		<Route path='/categories' element={<Categories banner={banner_1} />}/>
-		<Route path='/events' element={<ShopCategory banner={banner} />}/>
+		<Route path='/events' element={<Event banner={banner} />}/>
 		<Route path='/product' element={<Product/>}> 
 		<Route path=':productId' element={<Product/>}/>
 		</Route>

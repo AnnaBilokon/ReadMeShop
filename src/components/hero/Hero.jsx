@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './hero.css'
 import arrow_icon from '../assets/arrow.png'
 import hero_image from '../assets/hero_new.svg'
@@ -13,10 +14,12 @@ function Hero() {
             <p>Explore to find your new favorite book</p>
           </div>
         </div>
-        <button className="hero_latest_btn">
-          Explore
-          <img src={arrow_icon} alt="" />
-        </button>
+        <Link to="/shop" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <button className="hero_latest_btn">
+            Explore
+            <img src={arrow_icon} alt="" />
+          </button>
+        </Link>
       </div>
       <div className="hero_right">
         <img src={hero_image} alt="hero_picture" />

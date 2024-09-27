@@ -1,3 +1,6 @@
+.shop_category {
+	min-height: 100vh;
+}
 .shopcategory_banner {
 	display: block;
 	margin: 30px auto;
@@ -63,4 +66,38 @@
 	font-weight: 400;
 	font-family: "Special Elite", system-ui;
 	text-align: center;
+}
+
+.search-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	margin:90px 0;
+}
+.search-bar {
+	width: 500px;
+	height: 44px;
+	background-color: #F7F6F6;
+	color: #545454;
+	border: 1px solid #697AD1;
+	border-radius: 10px;
+	color:#545454;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.search-btn {
+	width: 70px;
+	height: 48px;
+	border-radius: 10px;
+	background-color: #697AD1;
+	border:#697AD1;
+	color:white;
+	font-size: 16px;
+	margin-left: -70px;
+}
+
+.tab-container img {
+	color: #697AD1;
 }
